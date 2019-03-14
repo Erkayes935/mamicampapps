@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/linear"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="TextView1"
+                  android:id="@+id/TextView1"
+                  android:layout_gravity="center_vertical"
+                  android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="12dp"
+                      android:layout_marginStart="12dp"
+                      android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="TextView2"
+                      android:id="@+id/TextView2"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="TextView3"
+                      android:id="@+id/TextView3"
+                      android:layout_marginTop="12dp"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:text="TextView4"
+              android:id="@+id/TextView4"
+              android:layout_alignParentRight="true"
+              android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="wrap_content"
+            android:text="Button"
+            android:layout_marginTop="12dp"
+            android:id="@+id/Button"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
