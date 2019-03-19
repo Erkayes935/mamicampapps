@@ -11,6 +11,7 @@ import com.github.kittinunf.fuel.httpGet
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.layout_employe_list.*
+import kotlinx.android.synthetic.main.layout_form.*
 
 class EmployeeListActivity : AppCompatActivity() {
 
@@ -36,7 +37,6 @@ class EmployeeListActivity : AppCompatActivity() {
             .responseString { request, response, result ->
 
                 Log.e("responsex", "${datanya.size}")
-                loadingBro.visibility = View.GONE
                 Log.e("responsexx", "${datanya.size}")
                 showData(result.component1())
 
@@ -63,8 +63,10 @@ class EmployeeListActivity : AppCompatActivity() {
                 )
             )
         }
-        adapterBebas?.notifyDataSetChanged()
-
+        recyclerEmployee.postDelayed({
+            datanya.reverse()
+            adapterBebas?.notifyDataSetChanged()
+        },2000)
     }
 
 }

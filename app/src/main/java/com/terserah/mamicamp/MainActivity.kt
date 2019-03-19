@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         TextView1.text = "Nama"
         TextView2.text = "Kelas"
         TextView3.text = "Hobi"
-        TextView4.text = "Laki atau Perempuan"
 
         //Button.text = "Iki Button"
 
